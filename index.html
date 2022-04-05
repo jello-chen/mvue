@@ -8,5 +8,22 @@
 </head>
 <body>
     <div id="app">hello, mvue!</div>
+    <script src="./dist/mvue.js"></script>
+    <script>
+        const vm = new MVue({
+            el: '#app',
+            data: {
+                num: 10,
+                person: {
+                    age: 18,
+                    level: [1, 2, 3],
+                    names: [
+                        {id: 1, val: 'jello'},
+                        {id: 2, val: 'taffy'},
+                    ]
+                }
+            }
+        })
+    </script>
 </body>
 </html>
